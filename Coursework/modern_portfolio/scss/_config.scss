@@ -1,0 +1,33 @@
+$primary-color: #212136;
+$secondary-color: #fc03f8;
+$show-home-image: true;
+$home-image: url(../../img/background.jpg);
+$background-opacity: 0.9;
+
+@mixin easeOut {
+    transition: color .2s ease-out;
+        &:hover {
+            color: $secondary-color;        
+        }
+}
+
+@mixin background {
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+
+            &:after {
+                content:'';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: rgba($primary-color, $background-opacity);
+            }
+        }
+    }
+}
