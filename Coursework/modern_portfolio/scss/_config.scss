@@ -5,10 +5,10 @@ $home-image: url(../../img/background.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
-    transition: color .2s ease-out;
-        &:hover {
-            color: $secondary-color;        
-        }
+    transition: all .2s ease-out;
+    &:hover {
+        color: $secondary-color;        
+    }
 }
 
 @mixin background {
