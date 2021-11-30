@@ -59,7 +59,7 @@
     .menu-branding .avatar {
       width: 256px;
       height: 256px;
-      background: url("../../img/avatar.png");
+      background: url("../img/avatar.png");
       border-radius: 50%;
       border: solid 3px #fc03f8; }
   .menu .nav-item {
@@ -105,7 +105,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../../img/background.jpg);
+    background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -270,7 +270,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .avatar {
-      background: url("../../img/avatar_small.png");
+      background: url("../img/avatar_small.png");
       width: 128px;
       height: 128px; }
   .about-info {
