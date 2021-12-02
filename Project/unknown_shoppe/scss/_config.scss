@@ -1,0 +1,21 @@
+$color-0: #0d0411;
+$color-1: #181B2E;
+$color-2: #2B5B6E;
+$color-3: #69BB9B;
+$color-4: #fff;
+
+@mixin background {
+    &#top-bar {
+        background: url("../img/header.jpg");
+        background-attachment: local;
+        background-size: cover;
+    }
+}
+
+.center {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+}
