@@ -1,14 +1,19 @@
-$color-0: #0d0411;
-$color-1: #181B2E;
-$color-2: #2B5B6E;
-$color-3: #69BB9B;
-$color-4: #fff;
+$color-0: #272727;
+$color-1: #E6537B;
+$color-2: #EFD09E;
+$color-3: #D2D8B3;
+$color-4: #FFFEF9;
 
 @mixin background {
-    &#top-bar {
-        background: url("../img/header.jpg");
-        background-attachment: local;
-        background-size: cover;
+    background: url("../img/abst.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@mixin easeOut {
+    transition: all .2s ease-out;
+    &:hover {
+        color: $color-1;        
     }
 }
 
@@ -17,5 +22,4 @@ $color-4: #fff;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 50%;
 }
