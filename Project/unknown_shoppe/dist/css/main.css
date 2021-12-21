@@ -180,6 +180,32 @@ img {
 .padding {
   padding-top: 100px; }
 
+.panel-signin {
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  background: #FFFEF9;
+  height: 100vh;
+  width: 480px;
+  z-index: 3;
+  filter: drop-shadow(-5px 0 5px rgba(0, 0, 0, 0.3)); }
+  .panel-signin.show {
+    visibility: visible; }
+  .panel-signin .wrapper .btn-close {
+    color: #272727;
+    font-size: 48px; }
+  .panel-signin .wrapper label {
+    color: #272727; }
+  .panel-signin .wrapper input {
+    display: inline-block;
+    width: 100%;
+    line-height: 25px; }
+  .panel-signin .wrapper .button {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 1rem; }
+
 #main-footer {
   position: relative;
   text-align: center;
