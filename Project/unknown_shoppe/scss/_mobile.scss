@@ -1,0 +1,109 @@
+// Desktops & laptops
+@include mediaLg {
+    main {   
+        &#home {
+            top: 500px;
+        }
+    }
+
+    header {
+        .logo {
+            width: 300px;
+            a {           
+                font-size: 2rem;
+            }       
+        }
+        nav {
+            a {
+                padding: 36px 0.5rem;
+            }       
+        }
+    }
+
+    .banner {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    #main-footer {
+        &.home {
+            top: 500px;
+        }  
+    }
+}
+
+// Smartphones
+@include mediaSm {
+    main {  
+        &#home {
+            top: 350px;
+
+            .items {
+                grid-template-columns: 1fr;
+                align-items: center;
+                img {
+                    margin: 0;
+                }
+            }
+
+            .desc {
+                text-align: center;
+            }
+        }
+        
+        &#contact {
+            .boxes {
+                grid-template-columns: 1fr;
+                div {   
+                    h3 {        
+                        font-weight: 100;
+                        font-size: 2rem;
+                        margin: 1rem 0 2rem 0;
+                    }   
+                    p  {
+                        font-size: 1.5rem; 
+                        margin: 0;                               
+                    }              
+                }  
+            }
+        }
+    }
+
+    header {
+        .logo {
+            margin-top: 30px;
+            margin-bottom: -15px;
+            float: above;
+            width: 100%;
+            line-height: 10px;
+            a {
+                font-size: 1.5rem;
+            }       
+        }
+        nav {
+            a {
+                float: below;
+                font-size: 1rem;
+                line-height: 15px;
+                padding: 5px 0.5rem;
+            }       
+        }
+    }
+
+    .banner {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .panel-signin {
+        width: 100vw; 
+    }
+
+    #main-footer {
+        &.home {
+            top: 350px;
+        }  
+    }
+}
