@@ -14,17 +14,14 @@ main {
         .items {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            margin: 0 5%;
             gap: 32px;
 
             img {
-                float: left;
                 width: auto;
                 margin-bottom: 8rem;
             }
     
             .desc {
-                float: right;
                 color: $color-0;
                 font-size: 1.5rem;
                 margin-bottom: 8rem;
@@ -93,7 +90,7 @@ main {
                 }
 
                 p  {
-                    color: $color-4;
+                    color: $color-2;
                     font-size: 1.5rem; 
                     margin: 0;                               
                 }              
@@ -104,7 +101,7 @@ main {
 
 body {
     min-height: 100%;
-    color: $color-4;
+    color: $color-2;
     margin: 0;
     background: $color-0;
     height: 100%;
@@ -153,6 +150,7 @@ header {
 }
 
 // Banner for the home page
+// Source used: https://www.youtube.com/watch?v=0mYbVEBsMh8
 .banner {   
     @include background;
     top: 100px;
@@ -188,7 +186,7 @@ header {
     width: 100%;
     height: 100%;
     min-height: calc(100vh - 40px);
-    background: $color-4;
+    background: $color-2;
     padding-bottom: 40px;
 
     h2 {
@@ -202,7 +200,7 @@ header {
 }
 
 a {
-    color: $color-4;
+    color: $color-2;
     text-decoration: none;
 }
 
@@ -225,7 +223,7 @@ img {
 
 .button {
     @include easeOut;
-    color: $color-4;
+    color: $color-2;
     text-align: center;
     font-size: 2rem;
     background: $color-0;
@@ -248,7 +246,7 @@ img {
     visibility: hidden;
     position: fixed;
     right: 0;
-    background: $color-4;
+    background: $color-2;
     height: 100vh;
     width: 480px;
     z-index: 3;
@@ -293,7 +291,7 @@ img {
     text-align: center;
     padding: 0.6rem;
     background: $color-1;
-    color: $color-4;
+    color: $color-2;
     height: 40px;
     width: 100%;
     z-index: 2;

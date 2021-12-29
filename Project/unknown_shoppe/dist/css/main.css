@@ -8,14 +8,11 @@ main {
     main#home .items {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      margin: 0 5%;
       gap: 32px; }
       main#home .items img {
-        float: left;
         width: auto;
         margin-bottom: 8rem; }
       main#home .items .desc {
-        float: right;
         color: #272727;
         font-size: 1.5rem;
         margin-bottom: 8rem; }
